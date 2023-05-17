@@ -1,0 +1,21 @@
+errorCodes:
+  '403': for bidden
+  '500': internal server error
+  
+server:
+  port: 9090
+
+
+spring:
+  application:
+    name: COMPANY-SERVICE
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: 
+    url: jdbc:mysql://localhost:8111/springboot7am
+    username: root
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
